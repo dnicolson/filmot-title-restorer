@@ -323,6 +323,7 @@ function createRestoreButton() {
             var containerDiv = document.createElement('div');
             containerDiv.id = 'TitleRestoredDiv';
             containerDiv.style.textAlign = 'center';
+            containerDiv.style.marginBottom = '20px';
 
             // Create the button
             var button = document.createElement('button');

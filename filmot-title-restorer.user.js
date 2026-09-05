@@ -86,6 +86,7 @@ function cleanUP() {
     $(".filmot_highlight").css("background-color","");
     $(".filmot_highlight").removeClass("filmot_highlight");
     $("#TitleRestoredDiv").remove();
+    $("#filmot-centered-container").remove();
     $(".filmot_c_link").remove();
     $(".filmot_button").remove();
     window.ArchivedIDS={};
@@ -182,10 +183,14 @@ function checkIfPrivatedOrRemoved() {
                     "videoID": id
                 })
                 .css({
-                    "background-color": "thistle",
+                    "background-color": "white",
                     "cursor": "pointer",
                     "text-decoration": "none",
-                    "display": "inline-flex"
+                    "display": "inline-flex",
+                    "align-items": "center",
+                    "padding": "6px",
+                    "border-radius": "12px",
+                    "gap": "6px"
                 });
 
             const iconWrapper = $(document.createElement('div'))
